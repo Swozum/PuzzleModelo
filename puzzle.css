@@ -1,0 +1,44 @@
+body{
+	background-color: #000;
+}
+			#interface{
+				width: 550px;
+				margin: 0px auto;
+				border: 2px solid #ffffff;
+				background-color: #204060;
+				padding: 20px;
+				text-align: center;
+			}
+			#titulo{
+				font: bold 22px arial;
+				color: #f0e040;
+				margin-top: 0px;
+			}
+			#tabuleiro{
+				line-height: 0px;
+			}
+			.btn{
+				font: bold 17px arial;
+				padding: 3px 7px;
+				margin: 0px 2px 15px 0px;
+				color: #800000;
+				cursor: pointer;
+			}
+			.btn:hover{
+				scale: 190%;
+			}
+			.imgs{
+				border-width: 1px;
+				border-style: solid;
+				border-image: initial;
+				border-color: rgb(255, 255, 255) rgb(0, 0, 0) rgb(0, 0, 0) rgb(255, 255, 255);
+				width: 100px;
+				height: 100px;
+			}
+			#img25{
+				border-width: 1px;
+				border-style: solid;
+				border-image: initial;
+				border-color: rgb(255, 255, 255) rgb(0, 0, 0) rgb(0, 0, 0) rgb(255, 255, 255);
+				opacity: .0;
+			}
