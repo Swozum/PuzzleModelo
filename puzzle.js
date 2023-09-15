@@ -216,9 +216,9 @@ function selectFolder() {
 
         if (selectedFolder) {
             selectedFolderName = selectedFolder.name;
-            alert('Pasta selecionada: ' + selectedFolderName);
+            alert('Imagem selecionada: ' + selectedFolderName);
         } else {
-            alert('Nenhuma pasta selecionada.');
+            alert('Nenhuma imagem foi selecionada, escolha uma pasta com 25 imagens');
         }
     });
 
