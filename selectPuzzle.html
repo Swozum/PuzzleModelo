@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+PUZZLE - Aplicação interativa de manipulação de um puzzle de 5x5 peças, destinado à avaliação de competências, no ano letivo de 2022-2023, do aluno n.º 25070, Nathaniel Blair.
+-->
+<html lang="pt">
+	<head>
+		<meta charset="utf-8" />
+		<title>PUZZLE:</title>
+		<link rel="stylesheet" type="text/css" href="puzzle.css">
+		<script type="text/javascript" src="puzzle.js"></script>
+	</head>
+	<body onload="inic()">
+		<div id="interface">
+			<h1 id="titulo"> Puzzle Em Jogo Normal</h1>
+			<button class="btn" id="btnFim" onclick="finalizar();estilo()">finalizar</button>
+			<button class="btn" id="btnBara" onclick="baralha();baralhar()">baralhar</button>
+			<button class="btn" id="btnFaci" onclick="facilitar()">facilitar e jogar</button>
+			<a href="index.html"><button class="btn" id="btnAltera" onclick="">Selecionar Puzzle</button></a>
+			<div id="tabuleiro">
+				
+			</div>
+		</div>
+	</body>
+</html>

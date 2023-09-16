@@ -1,5 +1,5 @@
 var posicoesPecas = []; // Array com a posição atual das peças
-var selectedFolderName = '0USC'; // Variável global para armazenar o nome da pasta selecionada
+var selectedFolderName = localStorage.getItem('selectedFolderName'); ;// Variável global para armazenar o nome da pasta selecionada
 
 			arrayPecas = [];
 			var arrayBaralhas = [];
@@ -7,7 +7,8 @@ var selectedFolderName = '0USC'; // Variável global para armazenar o nome da pa
 			//inicialização
 			
 			function inic(){
-				baralhar();
+				
+				baralhar();	
 			}
 			//******** input/output ********
 			//output de um conteúdo num contentor HTML, dados o ID do contentor e o conteúdo (boleano, número ou string)
@@ -205,10 +206,10 @@ var selectedFolderName = '0USC'; // Variável global para armazenar o nome da pa
 			  );
 			}
 
-function selectFolder() {
+/*function selectFolder() {
     const folderInput = document.createElement('input');
     folderInput.type = 'file';
-    folderInput.accept = '*/';
+    folderInput.accept = '';
     folderInput.webkitdirectory = true; // Para o Chrome
 
     folderInput.addEventListener('change', function () {
@@ -223,4 +224,18 @@ function selectFolder() {
     });
 
     folderInput.click();
+}*/
+
+function selecPuz(imageId) {
+  // Armazena o ID da imagem clicada no Local Storage
+  localStorage.setItem('selectedFolderName', imageId);
+
+  // Agora você tem o nome da pasta selecionada em localStorage
+/*if (selectedFolderName) {
+  alert('Imagem selecionada: ' + selectedFolderName);
+} else {
+  alert('Nenhuma imagem foi selecionada.');
+}*/
+  // Chama a função para iniciar o jogo ou qualquer outra lógica que você deseja aqui
+  inic();
 }
